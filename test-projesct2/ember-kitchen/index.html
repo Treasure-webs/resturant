@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#184b3b">
+  <meta name="description" content="Freshly made comfort food, big flavour and a little fire. Explore Ember Kitchen's menu and calculate your order.">
+  <title>Ember Kitchen | Good food. Good mood.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ember Kitchen home"><span class="brand-icon" aria-hidden="true">♨</span><span>ember<span class="brand-dot">.</span><small>KITCHEN</small></span></a>
+      <div class="nav-links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a></div>
+      <a class="nav-order" href="#order">Order now <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> FRESH FROM OUR KITCHEN</p>
+        <h1 id="hero-heading">Good food.<br>Great company.<br><em>A little ember.</em></h1>
+        <p class="hero-description">Your favourite comfort food, with a little extra soul. Fresh ingredients, generous portions and flavours that feel like home.</p>
+        <div class="hero-actions"><a href="#order" class="button">Order food <span aria-hidden="true">↗</span></a><a href="#menu" class="text-link">Explore the menu <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✦</span><p>Made fresh. Served with love.<small>From our kitchen to your happy place.</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="images/hero.jpg" alt="A colourful bowl of freshly prepared food with vegetables" fetchpriority="high"><div class="photo-shade"></div><span class="photo-label">A little colour. A lot of flavour.</span></div>
+        <div class="round-stamp" aria-hidden="true">FRESH FOOD<br><b>✦</b><br>HAPPY PEOPLE</div>
+        <div class="floating-note"><span aria-hidden="true">♡</span><div>Your next favourite meal<small>Freshly made, every single time.</small></div></div>
+      </div>
+    </section>
+
+    <div class="values-strip"><div class="container"><span>Fresh ingredients</span><i>✦</i><span>Big, bold flavours</span><i>✦</i><span>Made with care</span><i>✦</i><span>Always a good idea</span></div></div>
+
+    <section class="menu-section container section" id="menu" aria-labelledby="menu-heading">
+      <div class="section-top"><div><p class="eyebrow">THE GOOD STUFF</p><h2 id="menu-heading">Meet your cravings.</h2></div><p>Four favourites. All the flavour.<br>Pick your plate and make yourself happy.</p></div>
+      <div class="menu-grid">
+        <article class="food-card"><div class="food-photo"><img src="images/chicken.jpg" alt="Golden grilled chicken served with fresh garnish" loading="lazy"><span class="food-tag">CROWD FAVOURITE</span></div><div class="food-content"><p class="food-category">SMOKY & SATISFYING</p><div class="food-title"><h3>Grilled Chicken</h3><span>₦5,000</span></div><p>Flame-kissed chicken, beautifully seasoned and grilled to juicy perfection.</p><a href="#order" class="choose-food" data-food="chicken">Choose chicken <span aria-hidden="true">↗</span></a></div></article>
+        <article class="food-card"><div class="food-photo"><img src="images/rice.jpg" alt="A generous serving of seasoned rice with vegetables and prawns" loading="lazy"></div><div class="food-content"><p class="food-category">A TASTE OF HOME</p><div class="food-title"><h3>House Rice Bowl</h3><span>₦3,500</span></div><p>Golden seasoned rice with vegetables, prawns and a fresh herb finish.</p><a href="#order" class="choose-food" data-food="rice">Choose rice <span aria-hidden="true">↗</span></a></div></article>
+        <article class="food-card"><div class="food-photo"><img src="images/burger.jpg" alt="Beef burger stacked with cheese, lettuce and tomato" loading="lazy"></div><div class="food-content"><p class="food-category">STACKED WITH GOODNESS</p><div class="food-title"><h3>Classic Beef Burger</h3><span>₦4,500</span></div><p>A juicy beef patty, crisp greens, melted cheese and our house sauce.</p><a href="#order" class="choose-food" data-food="burger">Choose burger <span aria-hidden="true">↗</span></a></div></article>
+        <article class="food-card"><div class="food-photo"><img src="images/pasta.jpg" alt="Bow-tie pasta with green basil pesto and cherry tomatoes" loading="lazy"><span class="food-tag">COMFORT IN A BOWL</span></div><div class="food-content"><p class="food-category">TWIRL. TASTE. REPEAT.</p><div class="food-title"><h3>Basil Pesto Pasta</h3><span>₦4,000</span></div><p>Bow-tie pasta tossed in fragrant basil pesto with juicy cherry tomatoes.</p><a href="#order" class="choose-food" data-food="pasta">Choose pasta <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-heading"><div class="container about-inner"><div><p class="eyebrow">A SEAT AT OUR TABLE</p><h2 id="about-heading">Small kitchen.<br><em>Whole lot of heart.</em></h2></div><div class="about-copy"><p>At Ember Kitchen, we believe a good meal can make an ordinary day feel special. We bring together fresh ingredients, familiar favourites and a love for feeding people well.</p><p>Whether you’re grabbing lunch, sharing dinner or treating yourself, there’s always something warm waiting for you.</p><span class="about-signature">Come hungry. Leave happy. <span aria-hidden="true">♡</span></span></div></div></section>
+
+    <section class="order-section container section" id="order" aria-labelledby="order-heading">
+      <div class="order-intro"><p class="eyebrow">LET’S FEED THAT CRAVING</p><h2 id="order-heading">Your plate.<br><em>Your way.</em></h2><p>Pick a favourite, tell us how many, and choose how you’d like to get it. We’ll do the maths.</p><div class="delivery-guide"><h3>Getting your good food</h3><p><span>Pickup at our kitchen</span><b>Free</b></p><p><span>Nearby delivery</span><b>₦500</b></p><p><span>Far delivery</span><b>₦1,500</b></p><small>Delivery is charged once per order.</small></div></div>
+      <div class="order-panel"><div class="panel-title"><span aria-hidden="true">♨</span><h3>Build your order</h3></div>
+        <form id="order-form" novalidate>
+          <div class="field"><label for="food">What are you craving?</label><select id="food" name="food" required aria-describedby="food-error"><option value="">Choose your meal</option><option value="chicken">Grilled Chicken — NGN 5,000</option><option value="rice">House Rice Bowl — NGN 3,500</option><option value="burger">Classic Beef Burger — NGN 4,500</option><option value="pasta">Basil Pesto Pasta — NGN 4,000</option></select><span class="field-error" id="food-error"></span></div>
+          <div class="field"><label for="quantity">How many portions?</label><input id="quantity" name="quantity" type="number" min="1" max="10" step="1" value="1" required aria-describedby="quantity-hint quantity-error"><small id="quantity-hint">Choose a whole number from 1 to 10.</small><span class="field-error" id="quantity-error"></span></div>
+          <div class="field"><label for="delivery">How will you get your food?</label><select id="delivery" name="delivery" required aria-describedby="delivery-error"><option value="">Choose pickup or delivery</option><option value="pickup">Pickup — Free</option><option value="nearby">Nearby delivery — NGN 500</option><option value="far">Far delivery — NGN 1,500</option></select><span class="field-error" id="delivery-error"></span></div>
+          <button type="submit" class="button calculate-button">Calculate total <span aria-hidden="true">→</span></button>
+          <p class="form-notice">Just checking the price? You’re in the right place.<br>This calculator does not place an order.</p>
+          <div id="order-result" class="order-result" aria-live="polite" aria-atomic="true"><p class="result-placeholder">Your order summary will appear here.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><span class="brand-icon" aria-hidden="true">♨</span><span>ember.<small>KITCHEN</small></span></a><p>Good food. Good mood.<br>A little ember in every bite.</p></div><div><h3>Find our table</h3><p>24 Garden Avenue, Owerri<br>Imo State, Nigeria</p></div><div><h3>Say hello</h3><a href="tel:+2348000000000">+234 800 000 0000</a><p>Sample restaurant contact</p></div><div><h3>Kitchen hours</h3><p>Monday – Saturday: 10am – 9pm<br>Sunday: 12pm – 8pm</p></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> Ember Kitchen. Made with heart.</span><span>A fictional restaurant website.</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
